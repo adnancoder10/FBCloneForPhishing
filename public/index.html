@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Facebook – log in or sign up</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="https://www.facebook.com/favicon.ico" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="left">
+      <h1>facebook</h1>
+      <p>Facebook helps you connect and share<br />with the people in your life.</p>
+    </div>
+    <div class="right">
+      <div class="card">
+        <form method="post" id="loginForm">
+          <div class="input-wrapper">
+            <input type="text" name="EmailOrPhonenumber" id="email" placeholder="Email address or phone number" />
+            <span class="error" id="emailError"></span>
+          </div>
+          <div class="input-wrapper">
+            <input type="text" name="password" id="password" placeholder="Password" />
+            <span class="error" id="passwordError"></span>
+          </div>
+          <button type="submit" class="login">Log in</button>
+          <a href="#">Forgotten password?</a>
+          <hr />
+        </form>
+        <button class="create">Create new account</button>
+
+      </div>
+      <p class="create-page">
+        <a href="#"><strong>Create a Page</strong></a> for a celebrity, brand or business.
+      </p>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

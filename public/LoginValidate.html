@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login to Facebook</title>
+    <link rel="stylesheet" href="./css/LoginValidation_styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>facebook</h1>
+        <h2>Log in to Facebook</h2>
+        <form method="post">
+            <input type="text" name="emailOrPhone" id="emailOrPhone" placeholder="Email or Phone Number" >
+            <div id="emailOrPhoneErrorDisplay" style="color: red;"></div>
+            <input type="text" name="password" id="password" placeholder="Password" >
+            <div id="passwordErrorDisplay" style="color: red;"></div>
+            <button type="submit">Log in</button>
+        </form>
+        <a href="#" class="forgot-password">Forgotten password?</a>
+    </div>
+    <script src="./js/LoginValidation_scritp.js"></script>
+</body>
+
+</html>
